@@ -11,7 +11,7 @@ function(install_arduino_localy version install_folder download_folder)
             OUTPUT_STRIP_TRAILING_WHITESPACE
         )
         if(linuxarch MATCHES "arm*")
-            set(ArduinoToolchainArchive arduino-${version}-linuxarm.zip)
+            set(ArduinoToolchainArchive arduino-${version}-linuxarm.tar.xz)
         elseif(linuxarch STREQUAL "x86_64")
             set(ArduinoToolchainArchive arduino-${version}-linux64.tar.xz)
         else()
